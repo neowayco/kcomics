@@ -1,0 +1,92 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+
+		<div class="conts_body">
+			<h1 class="page_title">회원정보 수정</h1>
+
+
+
+
+			<div class="join_modify_wrap">
+
+				<div class="fm_title">간편회원 가입정보</div>
+				<div class="fm_cont_label ">
+					<label>이메일</label>
+					<input type="text" class="frm_ipt readonly" readonly="readonly" value="abcdabcd@abcada.com">	
+					
+				</div>
+
+				<br>
+
+				<div class="fm_title">일반회원 가입입정보</div>
+
+				<div class="fm_cont_label ">
+					<label for="">이름</label>
+					<input type="text" class="frm_ipt frm_100" placeholder="이름" required="required">	
+				</div>
+
+				<div class="fm_cont_label ">
+					<label for="birthday">생년월일</label>
+					<input type="text" id="birthday"  readonly="readonly" class="frm_ipt addr1" placeholder="생년월일">	
+				</div>
+
+				<div class="fm_cont_label ">
+					<label for="">연락처</label>
+					<input type="tel" class="frm_ipt frm_100" placeholder="연락처">	
+				</div>
+
+
+				<div class="fm_cont_label ">
+					<label for="">주소</label>
+
+					<input type="text" class="frm_ipt mb5 addr1" placeholder="우편번호"><button type="button" class="btn_inline">우편번호 찾기</button>
+					<input type="text" class="frm_ipt mb5 frm_100" placeholder="기본주소">	
+					<input type="text" class="frm_ipt mb5 frm_100" placeholder="상세주소">	
+
+				</div>
+
+				<div class="fm_cont_label ">
+					<label for="">소속</label>
+
+					<input type="text" class="frm_ipt mb5 addr1" placeholder="소속구분"><button type="button" class="btn_inline">소속 찾기</button>
+					<input type="text" class="frm_ipt frm_100" placeholder="소속명">	
+					<input type="text" class="frm_ipt frm_100" placeholder="부서(학과)">	
+				</div>
+
+
+
+
+
+				<br>
+				<div class="btn_submit_wrap">
+					<button type="submit" class="btn_submit">확인</button>
+				</div>
+
+			</div><!-- .join_modify_wrap -->
+
+		</div><!-- .conts_body -->
+
+
+
+
+<?php include_once('./inc_datepicker.html'); ?>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#birthday ").datepicker({ changeMonth: true, changeYear: true, dateFormat: "yy-mm-dd", 
+		yearRange: '1910:'+(new Date).getFullYear(),	
+		showButtonPanel: true,  
+		minDate:'-100y',
+		maxDate:'0'
+	}); 
+});
+
+</script>
+
+
+
+<?php include_once('./inc_footer.html'); ?>
+

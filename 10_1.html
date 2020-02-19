@@ -1,0 +1,138 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+
+		<div class="conts_body">
+			<h1 class="page_title">교육목록</h1>
+
+
+			<div class="edu_list">
+
+				<div class="table_info">수강신청중인 교육
+					<div class="more_view"><a href="#none">더보기 &gt;</a></div>
+				</div>
+	
+				<div class="tbl_style2 tbl_wrap">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">교육형태</th>
+								<th scope="col">교육명</th>
+								<th scope="col">상태</th>
+								<th scope="col">모집현황</th>
+								<th scope="col">수강신청기간</th>
+								<th scope="col">교육기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td  data-th="교육형태">오프라인</td>
+								<td  data-th="교육명">디지털 드로잉</td>
+								<td  data-th="상태">신청중</td>
+								<td  data-th="모집현황">10/20</td>
+								<td  data-th="수강신청기간">2019-11-01 ~ 2019-11-10</td>
+								<td  data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .tbl_style2 -->
+
+				<br>
+				<br>
+
+
+				<div class="table_info">학습중인 교육
+					<div class="more_view"><a href="#none">더보기 &gt;</a></div>
+				</div>
+
+				<div class="tbl_style2 tbl_wrap">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">교육형태</th>
+								<th scope="col">교육명</th>
+								<th scope="col">상태</th>
+								<th scope="col">교육기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td  data-th="교육형태">온라인</td>
+								<td  data-th="교육명">디지털 드로잉</td>
+								<td  data-th="상태">신청중</td>
+								<td  data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+							</tr>
+							<tr>
+								<td  data-th="교육형태">온프라인</td>
+								<td  data-th="교육명">디지털 만화</td>
+								<td  data-th="상태">신청중</td>
+								<td  data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .tbl_style2 -->
+
+				<br>
+				<br>
+
+
+
+
+				<div class="table_info">지난 교육
+					<div class="more_view"><a href="#none">더보기 &gt;</a></div>
+				</div>
+
+				<div class="tbl_style2 tbl_wrap">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">교육형태</th>
+								<th scope="col">교육명</th>
+								<th scope="col">교육기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td  data-th="교육형태">온라인</td>
+								<td  data-th="교육명">디지털 드로잉</td>
+								<td  data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+							</tr>
+							<tr>
+								<td  data-th="교육형태">온프라인</td>
+								<td  data-th="교육명">디지털 만화</td>
+								<td  data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .tbl_style2 -->
+				<br>
+				<br>
+
+
+			</div><!-- .edu_list -->
+
+		</div><!-- .conts_body -->
+
+
+
+
+<?php include_once('./inc_datepicker.html'); ?>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#birthday ").datepicker({ changeMonth: true, changeYear: true, dateFormat: "yy-mm-dd", 
+		yearRange: '1910:'+(new Date).getFullYear(),	
+		showButtonPanel: true,  
+		minDate:'-100y',
+		maxDate:'0'
+	}); 
+});
+
+</script>
+
+
+
+<?php include_once('./inc_footer.html'); ?>
+

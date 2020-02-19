@@ -1,0 +1,418 @@
+<?php include_once('./inc_header.html'); ?>
+
+<style type="text/css">
+.path_wrap,
+.side,
+.survey_wrap {display: none;}
+.contents_wrap {width: 100%; padding: 0; max-width:100%}
+.contents_wrap .conts {width: 100%; padding-left: 0;}
+
+@media (max-width: 768px) {
+	.nav_mobile_wrap.sub {display: none;}
+	.nav_mobile_wrap.main {display: block;}
+} 
+
+
+</style>
+
+
+
+
+
+
+<div class="cont_body_main">
+
+	<div class="online_visual">
+
+		<div class="temp">
+			<div class="ov_cont_wrap">
+				<div class="ov_cont">
+					<div class="txt">전문 온라인 <strong>만화 교육 과정</strong></div>
+					<div class="txt2">무한한 당신의 가능성을 배움을 통해 이어가세요</div>
+					<div class="img"><a href="#none"><img src="images/mcont_01.png" alt=""></a></div>
+				</div>
+
+				<div class="ov_tab">
+
+					<div class="ov_latest_tab">
+						<ul class="tab_ul">
+							<li class="active"><a href="#none">최근 공지사항</a></li>
+							<li><a href="#none">최근 생성된 과정</a></li>
+							<li><a href="#none">최근 게시물</a></li>
+						</ul>
+
+						<div class="tab_cont">
+							<div class="cont timesalecon1">
+								<div class="conts1">
+									<div class="img"><img src="images/sample1.png" alt=""></div>
+									<div class="desc_m">
+										<div class="subj">국내최대 '글로벌 웹툰시장 ...</div>
+										부천이 글로벌 웹툰 시장의 전진기지로 삼을 웹툰융합센터와 예술인 주택 건립의 첫 삽을 떴다.
+									</div>
+								</div>
+								<ul>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+								</ul>
+
+								<div class="more"><a href="#none1"><i class="xi xi-plus"></i></a></div>
+							</div>
+
+
+							<div class="cont timesalecon2">
+								<div class="conts1">
+									<div class="img"><img src="images/sample1.png" alt=""></div>
+									<div class="desc_m">
+										<div class="subj">2국내최대 '글로벌 웹툰시장 ...</div>
+										부천이 글로벌 웹툰 시장의 전진기지로 삼을 웹툰융합센터와 예술인 주택 건립의 첫 삽을 떴다.
+									</div>
+								</div>
+								<ul>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 추가모집 </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 .... </li>
+								</ul>
+								<div class="more"><a href="#none2"><i class="xi xi-plus"></i></a></div>
+							</div>
+
+							<div class="cont timesalecon2">
+								<div class="conts1">
+									<div class="img"><img src="images/sample1.png" alt=""></div>
+									<div class="desc_m">
+										<div class="subj">3국내최대 '글로벌 웹툰시장 ...</div>
+										부천이 글로벌 웹툰 시장의 전진기지로 삼을 웹툰융합센터와 예술인 주택 건립의 첫 삽을 떴다.
+									</div>
+								</div>
+								<ul>
+									<li>2019 K-Comics 아카데미 제9차 교육생  안내</li>
+									<li>2019 K-Comics 아카데미 제9차 교육생  안내</li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 .. </li>
+									<li>2019 K-Comics 아카데미 제9차 교육생 ....</li>
+								</ul>
+								<div class="more"><a href="#none3"><i class="xi xi-plus"></i></a></div>
+							</div>
+						</div>
+					</div><!-- .ov_latest_tab -->
+				</div><!-- .ov_tab -->
+
+			</div><!-- .ov_conts_wrap -->
+
+		</div>
+	</div><!-- .online_visual -->
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	var ov_tab = $('.ov_latest_tab');
+
+	$('.ov_latest_tab .tab_cont').children().css('display', 'none');
+	$('.ov_latest_tab .tab_cont div:first-child').css('display', 'block');
+
+	ov_tab.find('>ul>li').click(function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		var index = $('.ov_latest_tab .tab_ul li').index(this);
+		$(this).parent().next('.tab_cont').children().hide().eq(index).show();
+	});
+});
+
+</script>
+
+
+
+
+
+
+
+	<div class="main_body">
+
+		<div class="recom_online">
+			<div class="title_section">추천 과정</div>
+
+			<div class="recom_online_ban">
+				<div class="item_wrap">
+					<div class="item"><a href="#none"><div class="txt">장애인을 위한<br class="mw_none"> 전문직업교육과정</div><img src="images/rcm_on_ban_01.jpg" alt=""></a></div>
+					<div class="item"><a href="#none"><div class="txt">만화 작가 전문과정</div><img src="images/rcm_on_ban_02.jpg" alt=""></a></div>
+					<div class="item"><a href="#none"><div class="txt">창의적 작업을 위한<br class="mw_none"> 아이디어 강화 과정</div><img src="images/rcm_on_ban_03.jpg" alt=""></a></div>
+					<div class="item"><a href="#none"><div class="txt">디지털 드로잉 마스터 과정</div><img src="images/rcm_on_ban_04.jpg" alt=""></a></div>
+
+				</div>
+			</div>
+
+		</div><!-- .recom_online -->
+
+
+
+
+		<div class="ml_video_wrap">
+
+			<div class="ml_video">
+				<div class="side_title"><img src="images/ml_video_01.png" alt=""></div>
+
+				<div class="conts">
+					<div class="img"><a href="#none"><img src="images/ml_video_02.png" alt=""></a></div>
+					<ul>						
+						<li><a href="#none">2019 케이코믹스 아케데미 토크콘서트 홍보영상</a></li>
+						<li><a href="#none">K-Comics 아카데미 LAB 강사 인터뷰</a></li>
+						<li><a href="#none">K-Comics 만화 창의 샤워 1-Day 목동 체험</a></li>
+						<li><a href="#none">클립스튜디오 쿨팁 액기스 모음!</a></li>
+						<li><a href="#none">2019 케이코믹스 아케데미 토크콘서트 홍보영상</a></li>
+						<li><a href="#none">K-Comics 아카데미 LAB 강사 인터뷰</a></li>
+					</ul>				
+				</div><!-- .conts -->
+			</div><!--. ml_video -->
+		</div>
+
+
+
+
+		<div class="online_wrap">
+			<div class="title_section">온라인 교육</div>
+			<div class="online_list">
+
+				<div class="item_flex">
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+
+					<div class="item">
+						<div class="mout">
+							<div class="img"><img src="images/sample5.jpg" alt=""></div>
+							<div class="desc">
+								<div class="desc_m">
+									클립스튜디오 기초
+									<span>#해시태그</span>
+								</div>
+								<div class="dname">홍길동 강사</div>
+								<div class="date">
+									<i class="xi xi-watch"></i> 주당권장학습시간 <span>2시간/10회</span>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="desc_m">
+								<strong>클립스튜디오 기초</strong>
+								<span>#해시태그</span>
+							</div>
+							<div class="dname2">홍길동 강사</div>
+							<div class="date">
+								<i class="xi xi-watch"></i> 주당권장학습시간 2시간<br>
+								<i class="xi xi-timer-sand-o"></i> 10회차
+							</div>
+							<div class="view_more"><a href="#none">자세히 알아보기 <i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div><!-- .item -->
+				</div>
+
+			</div><!-- .online_list -->
+
+
+			<div class="page_wrap">
+				<ol>
+					<li><a href="#none"><a class="first">처음</a></a></li>
+					<li><a href="#none"><a class="prev">이전</a></a></li>
+					<li><a href="#none" class="active">1</a></li>
+					<li><a href="#none">2</a></li>
+					<li><a href="#none">3</a></li>
+					<li><a href="#none">4</a></li>
+					<li><a href="#none">5</a></li>
+					<li><a href="#none"><a class="next">다음</a></a></li>
+					<li><a href="#none"><a class="end">끝</a></a></li>
+				</ol>
+			</div><!-- .page_wrap -->
+
+		</div><!-- .online_wrap -->
+
+
+	</div><!-- .main_body -->
+</div><!-- .cont_body_main -->
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//버튼 active
+	$("#home2").addClass('active');
+});
+</script>
+
+<?php include_once('./inc_footer.html'); ?>
+
+

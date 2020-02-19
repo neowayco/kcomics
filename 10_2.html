@@ -1,0 +1,96 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+
+		<div class="conts_body">
+			<h1 class="page_title">수료증</h1>
+
+
+			<div class="cert_list">
+
+
+				<div class="cal_search_wrap">
+					<div class="cal">
+						<input type="text" id="period1" class="frm_ipt mb0 cal_date"><i class="xi xi-calendar-list calico1"></i> ~ <input type="text" id="period2" class="frm_ipt mb0 cal_date "><i class="xi xi-calendar-list calico2"></i> &nbsp;
+						<a href="#none" class="btn_inline tiny white">최근1주일</a>
+						<a href="#none" class="btn_inline tiny white">1개월</a>
+						<a href="#none" class="btn_inline tiny white">3개월</a>
+					</div>
+
+					<div class="board_search">
+						<select class="frm_select" >
+							<option value="교육명">교육명</option>
+							<option value="년도">년도</option>
+						</select>
+
+						<input type="text" class="frm_ipt bd_search mb0" required="required">
+						<button type="button" class="btn_inline min">검색</button>
+					</div>
+				</div>
+
+
+				<div class="table_info normal">총 1개의 수료증을 출력할 수 있습니다.	</div>
+
+				<div class="tbl_style2 tbl_wrap">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">교육명</th>
+								<th scope="col">교육기간</th>
+								<th scope="col">수료증 출력</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="" data-th="번호">오프라인</td>
+								<td class="" data-th="교육명">디지털 드로잉</td>
+								<td class="" data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+								<td class="" data-th="수료증 출력"><a href="#none" class="btn_inline min">출력</a></td>
+							</tr>
+							<tr>
+								<td class="" data-th="번호">오프라인</td>
+								<td class="" data-th="교육명">디지털 드로잉</td>
+								<td class="" data-th="교육기간">2019-11-01 ~ 2019-11-10</td>
+								<td class="" data-th="수료증 출력"><a href="#none" class="btn_inline min">출력</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .tbl_style2 -->
+
+
+			</div><!-- .cert_list -->
+
+		</div><!-- .conts_body -->
+
+
+
+
+<?php include_once('./inc_datepicker.html'); ?>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#period1 ").datepicker({ changeMonth: true, changeYear: true, dateFormat: "yy-mm-dd",
+		showButtonPanel: true,
+		minDate:'-100y',
+		maxDate:'0'
+	});
+	$('.calico1').click(function() {
+		$("#period1").focus();
+	});
+	$("#period2 ").datepicker({ changeMonth: true, changeYear: true, dateFormat: "yy-mm-dd",
+		showButtonPanel: true,
+		minDate:'-100y',
+		maxDate:'0'
+	});
+	$('.calico2').click(function() {
+		$("#period2").focus();
+	});
+});
+</script>
+
+
+
+<?php include_once('./inc_footer.html'); ?>
+

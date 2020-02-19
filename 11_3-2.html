@@ -1,0 +1,114 @@
+<?php include_once('./inc_header.html'); ?>
+<style type="text/css">
+.path_wrap,
+.side,
+.survey_wrap {display: none;}
+.contents_wrap {width: 100%; max-width:100%; padding: 77px 15px 30px 15px;}
+.contents_wrap .conts {width: 100%; padding-left: 0;}	
+</style>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">회원가입</h1>
+
+
+
+			
+
+			<div class="join_wrap">
+				<div class="join_info">
+				이것만 입력하면 가입완료!
+				</div>
+				
+				<form name="fjoin" method="post" onSubmit="return submitChk(this)">
+
+				<div class="join_desc">이메일</div>
+				<div class="jd_type">
+					<input type="email" class="frm_ipt jd_input" placeholder="이메일을 입력해주세요" required="required"><button type="button" class="btn_inline">인증하기</button>
+				</div>
+
+
+				
+				<div class="join_desc">비밀번호</div>
+				<div class="jd_type">
+					<input type="password" class="frm_ipt frm_100 mb0" placeholder="비밀번호 입력 (영문, 숫자, 특수기호 포함 8자리 이상)"  required="required">
+				</div>
+
+				<div class="jd_type">
+					<input type="password" class="frm_ipt frm_100" placeholder="입력한 비밀번호를 다시 한번 입력하세요"  required="required">
+				</div>
+
+
+				
+				<div class="join_desc">약관동의</div>
+				<div class="jd_agree">
+
+					<div class="agreeAll ">
+						<input type="checkbox" id="allagree" name="allagree">
+						<label for="allagree">모두 동의 합니다.</label>
+					</div>
+
+					<div class="agr_item ">
+						<input type="checkbox" id="agr1" name="agr1">
+						<label for="agr1" class="label_chk">만 14세 이상입니다. <span class="required">(필수)</span></label>
+					</div>
+					<div class="agr_item ">
+						<input type="checkbox" id="agr2" name="agr2">
+						<label for="agr2" class="label_chk">서비스 이용약관에 동의합니다. <span class="required">(필수)</span></label> <a href="20_agreement.html" target="_blank">[내용보기]</a>
+					</div>
+					<div class="agr_item ">
+						<input type="checkbox" id="agr3" name="agr3">
+						<label for="agr3" class="label_chk">개인정보 수집 및 이용에 동의합니다. <span class="required">(필수)</span></label> <a href="20_privacy.html" target="_blank">[내용보기]</a>
+					</div>
+
+
+					<div class="agr_item ">
+						<input type="checkbox" id="agr4" name="agr4">
+						<label for="agr4" class="label_chk">이벤트 할인 혜택 알림 수신에 동의합니다. (선택)</label>
+					</div>
+
+					<div class="agr_item ">
+						<input type="checkbox" id="agr5" name="agr5">
+						<label for="agr5" class="label_chk">장기 미접속 시 계정 활성 상태 유지합니다. (선택)</label>
+					</div>
+				</div><!-- .jd_agree -->
+
+				<div class="btn_submit_wrap">
+					<button type="submit" class="btn_submit">회원가입</button>
+				</div>
+				</form>
+
+
+			</div><!-- .join_wrap -->
+
+		</div><!-- .conts_body -->
+
+
+
+<script type="text/javascript">
+$(function(){
+
+	$('#allagree, #allagree lebel').click(function(){
+		if($("#allagree").is(":checked") == true) {
+			$('.agr_item input:checkbox').not(this).prop('checked', this.checked);
+		}else{
+			$('.agr_item input:checkbox').prop('checked', false);
+
+		}
+	});
+});	
+
+
+function submitChk(f)  {
+	if( $("input[name=agr1]").is(":checked") == false || $("input[name=agr2]").is(":checked") == false || $("input[name=agr3]").is(":checked") == false  ) {
+		alert("필수 항목은 동의 하셔야 합니다.");
+		return false;
+	}
+
+	//f.action = "form_ok.php";
+	return true;
+}
+</script>
+
+
+<?php include_once('./inc_footer.html'); ?>

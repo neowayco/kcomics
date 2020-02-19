@@ -1,0 +1,40 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">FAQ</h1>
+			<div class="sub_title">K-Comics에 대해 궁금하신 사항을 확인하세요.</div>
+
+
+			<div class="faq_list_wrap">
+				<div class="faq_result empty">
+					
+					입력하신 단어와 일치하는 검색결과가 없습니다.<br>
+					Q&A 게시판을 이용하여 직접 질문하시겠습니까?
+
+					<div class="btn_go">
+						<a href="#none" class="btn_inline">질문하기</a>
+					</div>
+				</div><!-- .faq_result -->
+
+			</div><!-- .faq_list_wrap -->
+
+
+		</div><!-- .conts_body -->
+
+
+    
+<script type="text/javascript">
+$(document).ready(function(){
+	$("ul.faq_list .q").click(function(){
+		$(this).parent().siblings().children('.q').removeClass('on');
+		$(this).parent().siblings().children('.answer').slideUp('fast');
+		$(this).parent().children('.answer').slideToggle('fast');
+		$(this).toggleClass('on');
+	});
+});
+</script>
+
+
+
+<?php include_once('./inc_footer.html'); ?>

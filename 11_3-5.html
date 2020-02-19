@@ -1,0 +1,77 @@
+<?php include_once('./inc_header.html'); ?>
+<style type="text/css">
+.path_wrap,
+.side,
+.survey_wrap {display: none;}
+.contents_wrap {width: 100%; max-width:100%; padding: 77px 15px 30px 15px;}
+.contents_wrap .conts {width: 100%; padding-left: 0;}	
+</style>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">회원정보 추가입력</h1>
+
+
+
+			<div class="join_wrap">
+
+
+				<div class="join_desc">이름</div>
+				<div class="jd_type">
+					<input type="text" class="frm_ipt frm_100" placeholder="이름" required="required">
+				</div>
+				<div class="join_desc">생년월일</div>
+				<div class="jd_type">
+					<input type="text" class="frm_ipt frm_100" placeholder="생년월일" required="required">
+				</div>
+				<div class="join_desc">연락처</div>
+				<div class="jd_type">
+					<input type="tel" class="frm_ipt frm_100" placeholder="연락처" required="required">
+				</div>
+
+				<div class="join_desc">주소입력</div>
+				<div class="jd_type">
+
+					<input type="text" class="frm_ipt addr1 mb5" placeholder="우편번호" required="required">
+					<button type="button" class="btn_inline">우편번호 찾기</button>
+
+					<input type="text" class="frm_ipt frm_100 mb5" placeholder="기본주소" required="required">
+					<input type="text" class="frm_ipt frm_100 mb5" placeholder="상세주소" required="required">
+					<input type="text" class="frm_ipt frm_100 mb5" placeholder="참고항목" required="required">
+				</div>
+
+
+
+				<div class="join_desc">소속</div>
+				<div class="jd_type">
+
+					<input type="text" class="frm_ipt addr1 mb5" placeholder="소속구분" required="required">
+					<button type="button" class="btn_inline">소속 찾기</button>
+
+					<input type="text" class="frm_ipt frm_100 mb5" placeholder="소속명" required="required">
+					<input type="text" class="frm_ipt frm_100 mb5" placeholder="부서(학과)명" >
+				</div>
+
+				<br>
+
+
+				<div class="btn_submit_wrap">
+					<button type="submit" class="btn_submit_inline">확인</button>
+					<a href="/" class="cancel">취소</a>
+				</div>
+
+
+
+
+			</div>
+
+
+		</div><!-- .conts_body -->
+
+
+
+
+
+
+<?php include_once('./inc_footer.html'); ?>
+
