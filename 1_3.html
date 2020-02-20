@@ -4,10 +4,164 @@
 		<div class="conts_body">
 			<h1 class="page_title">교육장 안내</h1>
 
+
+
+			<div class="classroom_vis">
+				<div class="clr_wrap">
+					<div class="clr_scr">
+						<a href="#none">
+							<p>한국만화영상진흥원</p>
+							<p>214호</p>
+						</a>
+						<a href="#none">
+							<p>한국만화영상진흥원</p>
+							<p>502호</p>
+						</a>
+						<a href="#none">
+							<p>한국만화영상진흥원</p>
+							<p>비즈니스센터</p>
+							<p>지하1층</p>
+							<p>웹툰스타트업캠퍼스</p>
+						</a>
+						<a href="#none">
+							<p>만화박물관</p>
+							<p>창의교육실</p>
+						</a>
+						<a href="#none">
+							<p>만화박물관</p>
+							<p>체험교육실</p>
+						</a>
+						<a href="#none">
+							<p>부천만화창작</p>
+							<p>스튜디오</p>
+						</a>
+						<a href="#none">
+							<p>기타</p>
+							<p>외부 특별 교육장</p>
+						</a>
+					</div>
+				</div><!-- .clr_wrap -->
+			</div><!-- .classroom_vis -->
+
+
+			<div class="class_desc">
+				<div class="item">
+					<p class="icon"><i class="xi xi-directions"></i></p>
+					<div class="desc">
+						<div class="cname">교육장</div>
+						<div class="contx">
+							한국만화영상진흥원 502호
+						</div>
+					</div>
+				</div><!-- .item -->
+
+				<div class="item">
+					<p class="icon"><i class="xi xi-group"></i></p>
+					<div class="desc">
+						<div class="cname">교육가능 인원</div>
+						<div class="contx">
+							40명
+						</div>
+					</div>
+				</div><!-- .item -->
+
+				<div class="item">
+					<p class="icon"><i class="xi xi-call-incoming"></i></p>
+					<div class="desc">
+						<div class="cname">교육장 주소 및 연락처</div>
+						<div class="contx">
+						경기도 부천시 길주로 1(상3동 529-2)  , 우편번호 : <br>
+						TEL: 032-310-3139<br>
+
+						</div>
+					</div>
+				</div><!-- .item -->
+
+				<div class="item">
+					<p class="icon"><i class="xi xi-compass"></i></p>
+					<div class="desc">
+						<div class="cname">오시는 방법</div>
+						<div class="contx">
+							자가용 이용시:<br>
+							<br>
+							대중교통수단:<br>
+							 - 버스<br>
+							 - 지하철<br>
+						</div>
+					</div>
+				</div><!-- .item -->
+			</div>
+
+
+
+
+			<div class="class_photo">
+				<div class="ctitle">교육장 모습</div>
+
+				<div class="class_gal class_gallery_top">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/1200.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+					</div>
+
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+
+
+
+				<div class="class_gal class_gallery_thumbs">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/1200.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="images/1200_2.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
 		</div><!-- .conts_body -->
 
 
 
+
+
+
+<script type="text/javascript">
+var galleryThumbs = new Swiper('.class_gallery_thumbs', {
+	spaceBetween: 10,
+	slidesPerView: 5,
+	loop: true,
+	freeMode: true,
+	loopedSlides: 5, //looped slides should be the same
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+});
+
+
+var galleryTop = new Swiper('.class_gallery_top', {
+	spaceBetween: 10,
+	loop:true,
+	loopedSlides: 5, //looped slides should be the same
+	navigation: {
+		nextEl: '.class_gal .swiper-button-next',
+		prevEl: '.class_gal .swiper-button-prev',
+	},
+	thumbs: {
+		swiper: galleryThumbs,
+	},
+});
+</script>
 
 
 <?php include_once('./inc_footer.html'); ?>

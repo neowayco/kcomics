@@ -333,7 +333,6 @@ $(document).ready(function(){
 	});
 
 
-
 	var off_tab = $('.offline_latest_tab');
 
 	$('.offline_latest_tab .tab_cont').children().css('display', 'none');
@@ -354,11 +353,21 @@ $(document).ready(function(){
 			el: '.off_line_ban_wrap .swiper-pagination',
 			clickable: true
 		},
+	});
 
+	$('.offline_edu_sort a').click(function(){
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
 	});
 
 	//버튼 active
 	$("#home3").addClass('active');
+
+
+
+
+
+	
 });
 </script>
 

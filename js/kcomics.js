@@ -103,7 +103,7 @@ $(document).ready(function() {
 		$("#snb1").show();
 	}
 
-	if (first_txt =='4_') {
+	if (first_txt =='3_') {
 		$("#snb2").show();
 	}
 

@@ -1,0 +1,77 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">디지털 갤러리</h1>
+			<div class="sub_title">K-Comics의 교육 및 행사에 관한 다앙한 사진과 영상을 감상하세요.</div>
+
+
+
+			<div class="gall_wrap">
+				<ul>
+					<li><a onclick="youtube_id_put('fKopy74weus');"><img src="images/s1.jpg" alt=""></a></li>
+					<li><a onclick="youtube_id_put('4ht80uzIhNs');"><img src="images/s2.jpg" alt=""></a></li>
+					<li><a onclick="youtube_id_put('7wtfhZwyrcc');"><img src="images/s1.jpg" alt=""></a></li>
+					<li><a href="#none" onclick="images_id('images/ss2.jpg', '6_2_1.html');"><img src="images/s2.jpg" alt=""></a></li>
+
+					<li><a href="#none" onclick="images_id('images/ss3.jpg', '6_2_1.html');"><img src="images/s1.jpg" alt=""></a></li>
+					<li><a href="#none" onclick="images_id('images/ss4.jpg', '6_2_1.html');"><img src="images/s2.jpg" alt=""></a></li>
+					<li><a href="#none" onclick="images_id('images/ss1.jpg', '6_2_1.html');"><img src="images/s1.jpg" alt=""></a></li>
+					<li><a href="#none" onclick="images_id('images/ss2.jpg', '6_2_1.html');"><img src="images/s2.jpg" alt=""></a></li>
+				</ul>
+
+				<div id="pop_youtube">
+					<div id="video_yt">
+						<iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+						<button class="pop_close">닫기</button>
+					</div>
+				</div>
+
+				<div id="pop_images">
+					<div id="pop_images_view">
+						<p><img src="images/ss4.jpg" alt="" id="pop_img"></p>
+						<div class="desc"><a href="#none" id="purl">2020 K-comics 아카데미 웹툰창작체험관 캐릭터 수업</a></div>
+						<button class="pop_close">닫기</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div><!-- .conts_body -->
+
+
+
+<script type="text/javascript">
+//팝업영상닫기
+$(".pop_close").click(function(){
+	$("#pop_youtube").fadeOut(200);
+	$("#pop_images").fadeOut(200);
+	stopVideo();
+});
+
+function youtube_id_put(yid) {
+	$("#pop_youtube").fadeIn(200);
+	$("#video_yt iframe").attr("src" , "//youtube.com/embed/"+yid+"?enablejsapi=1&autoplay=1");   
+}
+function stopVideo() {
+	var div = document.getElementById("video_yt");
+	var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+	iframe.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+};
+function playVideo() {
+	var div = document.getElementById("video_yt");
+	var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+	iframe.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+};
+
+function images_id(id, pUrl) {
+	$("#pop_img").attr("src" , id); 
+	$("#purl").attr("href" , pUrl); 
+	
+	$("#pop_images").fadeIn(200);
+
+}
+</script>
+
+
+<?php include_once('./inc_footer.html'); ?>
