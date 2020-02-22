@@ -107,7 +107,7 @@ $(document).ready(function() {
 		$("#snb2").show();
 	}
 
-	if (first_txt =='5_') {
+	if (first_txt =='5_' || first_txt =='6_') {
 		$("#snb3").show();
 	}
 

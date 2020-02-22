@@ -1,0 +1,152 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">온라인전시회&amp;품평회</h1>
+
+			<div class="sub_title">교육생들이 작품을 전시하는 공간입니다. 격려와 응원으로 성숙한 품평문화를 만들어 갑니다.</div>
+
+
+
+			<div class="show_detail">
+
+				<div class="asse_wrap">
+					<div class="slider">
+						<div class="asse_slider">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><img src="images/k1.jpg" alt=""></li>
+								<li class="swiper-slide"><img src="images/k1.jpg" alt=""></li>
+								<li class="swiper-slide"><img src="images/k1.jpg" alt=""></li>
+								<li class="swiper-slide"><img src="images/k1.jpg" alt=""></li>
+							</ul>
+							<div class="swp_nav">
+								<a href="#none" class="prev"><i class="xi xi-angle-left"></i></a>
+								<a href="#none" class="next"><i class="xi xi-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cont">
+						<div class="asse_subj">스케치업을 활용한 웹툰 배경</div>
+
+						<ul class="asse_list">
+							<li><span><i class="xi-calendar-list"></i> 게시일</span>2011-01-01</li>
+							<li><span><i class="xi-comment"></i> 조회수</span>102</li>
+							<li><span><i class="xi-star"></i> 평점</span> 4.5</li>
+						</ul>
+
+
+						<div class="asse_now">
+							<div class="atitle">별점주기</div>
+
+							<div class="star_rating">
+								<a class="star" data-star='1'></a>
+								<a class="star" data-star='2'></a>
+								<a class="star" data-star='3'></a>
+								<a class="star" data-star='4'></a>
+								<a class="star" data-star='5'></a>
+
+								<span class="btn_wrap">
+								<a class="btn_inline min" href="#none">별점주기</a>
+								</span>
+							</div>
+							
+						</div><!-- .asse_now -->
+
+						<p class="notice">* 한번 입력된 별점은 수정 할 수 없습니다.</p>
+
+					</div><!-- .cont -->
+				</div><!-- .asse_wrap -->
+
+
+
+
+				<div class="exp_tab">
+					<ul>
+						<li><a href="5_2_1.html">작품설명</a></li>
+						<li><a href="5_2_2.html" class="active">작품코멘트(7)</a></li>
+					</ul>
+				</div>
+
+
+
+				<div class="comment_wrap">
+						<div class="cmt_cnt"><i class="xi xi-comment-o"></i> 댓글(2)
+							<span class="btw"><a href="#none" class="btn_inline min white">댓글작성하기</a></span>
+						</div>
+
+						<div class="cmt_article">
+							<div class="qtitle "><span><p class="tc">C</p></span>
+								<div class="qc pdr"><strong>홍길동</strong> 님의 댓글 입니다.</div>
+								<div class="date">2020-02-02 11:40</div>
+							</div>
+							<div class="qcontent cmt">
+								안녕하세요. 반갑습니다. <br>
+								훌륭한 작품 입니다.
+								<div class="action">
+									<a href="#none"><i class="xi-pen" title="수정"></i></a>
+									<a href="#none"><i class="xi-close" title="삭제"></i></a>
+									<a href="#none"><i class="xi-reply" title="댓글입력"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="cmt_article">
+							<div class="qtitle "><span><p class="tc">C</p></span>
+								<div class="qc pdr"><strong>홍길동</strong> 님의 댓글 입니다.</div>
+								<div class="date">2020-02-02 11:40</div>
+							</div>
+							<div class="qcontent cmt">
+								안녕하세요. 반갑습니다. <br>
+								훌륭한 작품 입니다.
+								<div class="action">
+									<a href="#none"><i class="xi-pen" title="수정"></i></a>
+									<a href="#none"><i class="xi-close" title="삭제"></i></a>
+									<a href="#none"><i class="xi-reply" title="댓글입력"></i></a>
+								</div>
+							</div>
+						</div>
+				</div><!-- .comment_wrap -->
+
+
+				<div class="control_link">
+					<a class="btn_inline min" href="#none">목록</a>
+				</div>
+
+
+			</div><!-- .show_detail -->
+
+
+
+
+
+
+
+
+
+		</div><!-- .conts_body -->
+
+
+
+<script type="text/javascript">
+var swiper_asse = new Swiper('.asse_slider', {
+		//autoplay: { delay: 4000, },
+		loop: true,
+		navigation: {
+			nextEl: '.swp_nav .next',
+			prevEl: '.swp_nav .prev',
+		},
+});
+
+$( ".star_rating a.star" ).click(function() {
+     $(this).parent().children("a").removeClass("on");
+     $(this).addClass("on").prevAll("a").addClass("on");
+     return false;
+});
+
+
+	
+</script> 
+
+
+<?php include_once('./inc_footer.html'); ?>
