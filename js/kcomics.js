@@ -67,14 +67,32 @@ $(document).ready(function() {
 
 
 
+	//모바일용 왼쪽 nav
+	var $nav_exp = $('#nav .nav_list').clone();
+
+	$(".left_navi").append($nav_exp);
+
+	$('.left_navi a').each(function( index ) {
+		crtIndex = $(this).attr('data_sub');
+		if( crtIndex == 'yes' ){
+			$(this).attr("href","#none");
+		};
+		if( crtIndex == 'no' ){
+			$(this).parents('li').removeClass('hv');
+		};
+	});
+
+	$(".left_navi li.hv").click(function(){
+		$(this).siblings().removeClass("on");
+		$(this).siblings().children("ul").slideUp('fast');
+		$(this).children("ul").slideToggle('fast');
+		$(this).toggleClass('on');
+	});
 
 
 
 
-
-
-
-	// 임시소개용 ************/
+	// ************/
 
 	//파일명 추출
 	function getFilename(url) {
@@ -100,30 +118,34 @@ $(document).ready(function() {
 	var first_txt4 = ftxt.substring(0,4);
 
 	if (first_txt =='1_') {
-		$("#snb1").show();
+		$("#snb1, #snb_mob1").show();
 	}
 
 	if (first_txt =='3_') {
-		$("#snb2").show();
+		$("#snb2, #snb_mob2").show();
 	}
 
 	if (first_txt =='5_' || first_txt =='6_') {
-		$("#snb3").show();
+		$("#snb3, #snb_mob3").show();
 	}
 
 	if (first_txt =='7_') {
-		$("#snb4").show();
+		$("#snb4, #snb_mob4").show();
 	}
 
 	if (first_txt =='8_') {
-		$("#snb5").show();
+		$("#snb5, #snb_mob5").show();
 	}
 
 	if (first_txt =='9_') {
-		$("#snb6").show();
+		$("#snb6, #snb_mob6").show();
 	}
 
-	
+	if (first_txt =='10') {
+		$("#snb10, #snb_mob10").show();
+	}
+
+	/*
 	if (first_txt4 =='10_1' || first_txt4 =='10_2' || first_txt4 =='10_3') {
 		$("#snb10a").show();
 	}
@@ -131,15 +153,11 @@ $(document).ready(function() {
 	if (first_txt4 =='10_4' || first_txt4 =='10_5' || first_txt4 =='10_6' || first_txt4 =='10_7') {
 		$("#snb10b").show();
 	}
+	*/
 
 	if (first_txt =='11') {
-		$("#snb11").show();
+		$("#snb11, #snb_mob11").show();
 	}
-
-
-
-
-
 
 
 

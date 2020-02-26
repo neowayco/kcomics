@@ -323,14 +323,17 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	
-	$(".ofv_link").mouseenter(function(){
-		$(".ofv_link").removeClass('on');
-		$(this).find('img').attr("src", $(this).find('img').attr("src").replace("_off","_on"));
-	});
 
-	$(".ofv_link").mouseleave(function(){
-		$(this).find('img').attr("src", $(this).find('img').attr("src").replace("_on","_off"));
-	});
+	if ($(window).width() > 768) {
+		$(".ofv_link").mouseenter(function(){
+			$(".ofv_link").removeClass('on');
+			$(this).find('img').attr("src", $(this).find('img').attr("src").replace("_off","_on"));
+		});
+
+		$(".ofv_link").mouseleave(function(){
+			$(this).find('img').attr("src", $(this).find('img').attr("src").replace("_on","_off"));
+		});
+	}
 
 
 	var off_tab = $('.offline_latest_tab');
@@ -361,11 +364,7 @@ $(document).ready(function(){
 	});
 
 	//버튼 active
-	$("#home3").addClass('active');
-
-
-
-
+	$("#home3, #home3m").addClass('active');
 
 	
 });

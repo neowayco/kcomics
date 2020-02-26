@@ -21,7 +21,7 @@
 								<span>수료교육 카테고리</span>
 
 								<div class="checklist">
-									<input type="checkbox">전체
+									<input type="checkbox" class="allchk">전체
 									<input type="checkbox">디지털 신기술
 									<input type="checkbox">기획 연출
 									<input type="checkbox">만화창의 샤워
@@ -35,8 +35,8 @@
 							</li>
 							<li>
 								<span>전공계열</span>
-									<div class="checklist">
-									<input type="checkbox">전체
+								<div class="checklist">
+									<input type="checkbox" class="allchk">전체
 									<input type="checkbox">공학계열
 									<input type="checkbox">상경계열
 									<input type="checkbox">예체능계열
@@ -48,7 +48,7 @@
 							<li>
 								<span>최종학력</span>
 								<div class="checklist">
-									<input type="checkbox">전체
+									<input type="checkbox" class="allchk">전체
 									<input type="checkbox">학사
 									<input type="checkbox">석사
 									<input type="checkbox">박사
@@ -57,7 +57,7 @@
 							<li>
 								<span>경력</span>
 								<div class="checklist">
-									<input type="checkbox">전체
+									<input type="checkbox" class="allchk">전체
 									<input type="checkbox">있음
 									<input type="checkbox">없음
 								</div>
@@ -69,7 +69,6 @@
 						<button type="button" class="btn_inline ">검색</button>
 					</div>
 				</div><!-- .search_eport -->
-
 
 
 
@@ -221,6 +220,17 @@
 		</div><!-- .conts_body -->
 
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.allchk, .allchk lebel').click(function(){
+		if($(".allchk").is(":checked") == true) {
+			$(this).parents('.checklist').children('input[type="checkbox"]').prop("checked",true);
+		}else{
+			$(this).parents('.checklist').children('input[type="checkbox"]').prop("checked",false);
+		}
+	});
+});	
+</script>
 
 
 
