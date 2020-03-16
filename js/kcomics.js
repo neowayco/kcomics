@@ -18,6 +18,11 @@ $(document).ready(function() {
 		$(".nav_clone").show();
 	});
 
+	$(".ham a").click(function(){
+		$(".nav_clone").toggle();
+	});
+
+
 	$("#nav .hv").mouseleave(function(){
 		$(".nav_clone").mouseenter(function(){
 			$(".nav_clone").show();
@@ -68,9 +73,9 @@ $(document).ready(function() {
 
 
 	//모바일용 왼쪽 nav
-	var $nav_exp = $('#nav .nav_list').clone();
+	var $nav_exp_mov = $('#nav .nav_list').clone();
 
-	$(".left_navi").append($nav_exp);
+	$(".left_navi").append($nav_exp_mov);
 
 	$('.left_navi a').each(function( index ) {
 		crtIndex = $(this).attr('data_sub');

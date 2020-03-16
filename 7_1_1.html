@@ -1,0 +1,123 @@
+<?php include_once('./inc_header.html'); ?>
+
+
+		<div class="conts_body">
+			<h1 class="page_title">이포트폴리오</h1>
+			<div class="sub_title">포트폴리오와 경력사항들을 공개하고 취업연계에 도움을 받으세요.</div>
+
+
+			<div class="eport_detail">
+				<div class="photo"><img src="images/w1.jpg" alt=""></div>
+
+				<div class="eport_detail_info">
+					<div class="ename">강태훈</div>
+
+					<ul>
+						<li>경희대학교(학사)    |    예체능계열    |    신입    |    thkangtest@gmail.com</li>
+						<li><span class="tt">수료교육</span>디지털 신기술</li>
+						<li><span class="tt">포트폴리오</span>http://www.naver.com/thkang/portfolio.</li>
+						<li><span class="tt">이력서 공개여부</span> <span class="btnb">전체공개</span></li>
+					</ul>
+				</div>
+			</div><!-- .eport_detail -->
+
+
+			<div class="exp_tab bdbb"  id="eport_dt_tab">
+				<ul>
+					<li class="active"><a>이력서</a></li>
+					<li><a>포트폴리오</a></li>
+				</ul>
+			</div>
+
+			<div class="eport_tab_cont">
+
+				<div class="tbl_style3 tbl_wrap cont cont1">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td_type">생년월일</td>
+								<td class="td_desc">
+								1992-06-01
+								</td>
+							</tr>
+
+							<tr>
+								<td class="td_type">자격 및 수상경력</td>
+								<td class="td_desc">
+								교내 디지털미디어 경연대회 우수상 수상(2017-08-21, 서울대학교총장)<br>
+								정보처리기사(2015-04-04, 한국산업인력공단)
+
+								</td>
+							</tr>
+
+							<tr>
+								<td class="td_type">자기소개</td>
+								<td class="td_desc">
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+								저는 강태훈이라고 합니다. 본디 제 전공은 심리학과이나 이것은 제 적성이 아니었습니다. <br>
+
+								</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+				</div><!-- .tbl_style3 -->
+
+
+
+				<div class="tbl_style3 tbl_wrap cont cont2">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td_type">URL</td>
+								<td class="td_desc">
+									<a href="http://www.naver.com/thkang/portfolio">http://www.naver.com/thkang/portfolio</a><br>
+									<a href="http://tistory.com/thkang/portfolio">http://tistory.com/thkang/portfolio</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="td_type">첨부파일</td>
+								<td class="td_desc">
+								<a href="#none">웹툰 기획서. PDF</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div><!-- .tbl_style3 -->
+			</div><!-- .eport_tab_cont -->
+
+		</div><!-- .conts_body -->
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	var tab2 = $('#eport_dt_tab');
+
+	$('.eport_tab_cont').children().css('display', 'none');
+	$('.eport_tab_cont div:first-child').css('display', 'block');
+
+	tab2.find('>ul>li').click(function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+
+		var index = $('#eport_dt_tab ul li').index(this);
+
+		$('.eport_tab_cont').children().hide().eq(index).show();
+	});
+});
+
+</script>
+
+
+
+<?php include_once('./inc_footer.html'); ?>
