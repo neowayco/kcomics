@@ -1,21 +1,17 @@
 <?php include_once('./inc_header.html'); ?>
 
 
+<style type="text/css">
+.side,
+.survey_wrap {display: none;}
+.contents_wrap .conts {width: 100%; padding-left: 0;}
+</style>
 
 
 
 
 
-		<div class="conts_body">
-			<h1 class="page_title">K-COMICS 아카데미</h1>
-
-
-			<div class="control_link">
-				<a class="btn_inline tiny white" href="#none">인쇄하기</a>
-			</div>
-
-
-
+		<div class="sub_full_body">
 
 
 
@@ -26,10 +22,9 @@
 						<div class="photo">
 							<p><img src="images/msample_03.jpg" alt=""></p>
 							<ul>
-								<li><span>강사</span> 홍길동</li>
-								<li><span>수강료</span> 무료</li>
+								<li><span>강사</span> <div>홍길동</div></li>
+								<li><span>수강료</span> <div>무료</div></li>
 							</ul>
-
 						</div>
 
 						<div class="desc">
@@ -38,7 +33,7 @@
 							<ul class="dlist">
 								<li><span>교육기간</span> 2020-04-01 ~ 2020-04-30</li>
 								<li><span>수료증</span> 미발급</li>
-								<li><span>주당권장 학습시간</span> 2시간/10회</li>
+								<li><span class="lt">주당권장 학습시간</span> 2시간/10회</li>
 							</ul>
 
 							<div class="summ">
@@ -46,12 +41,12 @@
 									<li>
 										<i class="xi-calendar-check"></i>
 										<span>신청기간</span>
-										<div>2020-01-01 ~ 2020-03-21</div>
+										<div>2020-01-01 ~ <br class="pc_none">2020-03-21</div>
 									</li>
 									<li>
 										<i class="xi-users-o"></i>
 										<span>신청유형</span>
-										<div>2020-01-01 ~ 2020-03-21</div>
+										<div>개인(총25명)</div>
 									</li>
 									<li>
 										<i class="xi-alarm-clock-o"></i>
@@ -64,7 +59,7 @@
 					</div>
 
 					<div class="control_link">
-						<a class="btn_inline min" href="#none" id="bpop_open">신청하기</a>
+						<a class="btn_inline min hred" href="#none" id="bpop_open"><i class="xi-user-o"></i>신청하기</a>
 					</div>
 
 				</div><!-- .subj_wrap -->
@@ -72,6 +67,8 @@
 
 				<div class="class_detail">
 					<div class="ptitle">교육 목적</div>
+
+
 					<ul class="circle">
 						<li>출석률 50% 미만일 경우 제적처리 됩니다. (무단결석에 한함)</li>
 						<li>지각 2회는 결석 1회로 간주합니다.</li>
@@ -136,9 +133,9 @@
 									<li><span>이메일</span> aaa@aaa.aaa</li>
 									<li><span>홈페이지</span> wwww.google.com</li>
 
-									<li>웹툰 <그대에게>, <바우트윈>, <알라모> 연재</li>
-									<li>EBS 연재웹툰 <물상객주 시즌2> 연재</li>
-									<li>포토샵을 이용해 메카닉, 항공기 등 전문분야의 일러스트레이터로 활동중 </li>
+									<li><span></span>-웹툰 <그대에게>, <바우트윈>, <알라모> 연재</li>
+									<li><span></span>-EBS 연재웹툰 <물상객주 시즌2> 연재</li>
+									<li><span></span>-포토샵을 이용해 메카닉, 항공기 등 전문분야의 일러스트레이터로 활동중 </li>
 								</ul>
 							</div>
 						</div>
@@ -178,9 +175,9 @@
 						<div class="button_info">수강신청 교육의 정보를 다시 한번 확인하신 후 '신청하기' 버튼을 클릭해 주세요.</div>
 
 						<div class="btn_wrap">
-							<a class="btn_inline " href="#none" id="sign_submit">신청하기</a>
+							<a class="btn_inline hred" href="#none" id="sign_submit"><i class="xi-user-o"></i>신청하기</a>
 							&nbsp; 
-							<a class="btn_inline white bpop_close" href="#none" >취소</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-list"></i>취소</a>
 						</div>
 					</div>
 
@@ -188,11 +185,12 @@
 					<div class="bpop_wrap step2">
 
 						<div class="pp_header">
+							<i class="sty xi-check-circle-o"></i><br>
 							수강신청 완료
 							<p class="close bpop_close"><i class="xi xi-close"></i></p>
 						</div>
 
-						<div class="button_info">김학생 님 수강신청이 완료 되었습니다.</div>
+						<div class="button_info">김학생 님 <strong>수강신청이 완료</strong> 되었습니다.</div>
 
 
 						<div class="form_detail">
@@ -200,7 +198,7 @@
 							<div class="ft">수강신청 상세정보</div>
 
 							<ul>
-								<li><span>접수번호</span> 2020enr12345</li>
+								<li><span>접수번호</span> <strong>2020enr12345</strong></li>
 								<li><span>신청일시</span>  2020-04-01 15:01:12</li>
 								<li><span>신청인</span> 김학생</li>
 							</ul>
@@ -221,9 +219,9 @@
 						</div>
 
 						<div class="btn_wrap">
-							<a class="btn_inline white" href="#none">인쇄하기</a>
+							<a class="btn_inline  hred" href="#none"><i class="xi-print"></i>인쇄하기</a>
 							&nbsp; 
-							<a class="btn_inline white bpop_close" href="#none" >확인완료</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-align-justify"></i>확인완료</a>
 						</div>
 					</div>
 
@@ -254,7 +252,7 @@
 
 			</div><!-- .online_prd -->
 
-		</div><!-- .conts_body -->
+		</div><!-- .sub_full_body -->
 
 
 

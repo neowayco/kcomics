@@ -1,18 +1,22 @@
 <?php include_once('./inc_header.html'); ?>
 
+<style type="text/css">
+.side,
+.survey_wrap {display: none;}
+.contents_wrap .conts {width: 100%; padding-left: 0;}
+</style>
 
 
 
 
 
+		<div class="sub_full_body">
 
-		<div class="conts_body">
-			<h1 class="page_title">내 강의실</h1>
-			<div class="sub_title">만화의 생동감을 살리는 색채표현! 디지털컬러링</div>
+			<h1 class="page_title">만화의 생동감을 살리는 색채표현</h1>
 
-				<div class="control_link">
-					<a class="btn_inline min" href="#none">목록</a>
-				</div>
+			<div class="control_link">
+				<a class="btn_inline min hred" href="#none"><i class="xi xi-align-justify"></i> 목록</a>
+			</div>
 
 
 			<div class="my_page_wrap">
@@ -20,7 +24,7 @@
 				<div class="my_edulist_title">
 
 					<div class="control_link">
-						<a class="btn_inline tiny" href="#none">전체 학습자 성적 재계산</a>
+						<a class="btn_inline tiny hred" href="#none"><i class="xi xi-calculator"></i> 전체 학습자 성적 재계산</a>
 					</div>
 
 					<div class="frm_neo">
@@ -55,8 +59,8 @@
 				<div class="tabn_detail active" id="tabn_detail1">
 
 					<div class="table_top_info">
-						총 5명의 수강생이 존재합니다.
-						<div class="btn_download"><a class="btn_inline tiny" href="#none">다운로드</a></div>
+						총 <strong>5명</strong>의 수강생이 존재합니다.
+						<div class="btn_download"><a class="btn_inline hred tiny" href="#none"><i class="xi-download"></i> 다운로드</a></div>
 					</div>
 
 					<div class="tbl_style1 tbl_wrap fz_m">
@@ -109,7 +113,7 @@
 				<div class="tabn_detail" id="tabn_detail2">
 
 					<div class="table_top_info">
-						총 1개의 과제가 존재합니다.
+						총 <strong>1개</strong>의 과제가 존재합니다.
 					</div>
 
 					<div class="tbl_style1 tbl_wrap fz_m">
@@ -127,13 +131,13 @@
 									<td>4</td>
 									<td>스케치업을 이용하여 배경작업물을 제출하시오.</td>
 									<td>2019-12-30 09:00 ~ 2019-12-31 14:00</td>
-									<td><a href="#none" class="btn_inline tiny">평가하기</a></td>
+									<td><a href="#none" class="btn_inline tiny hred"><i class="xi-thumbs-up"></i>평가하기</a></td>
 								</tr>
 								<tr>
 									<td>3</td>
 									<td>스케치업을 이용하여 배경작업물을 제출하시오.</td>
 									<td>2019-12-30 09:00 ~ 2019-12-31 14:00</td>
-									<td><a href="#none" class="btn_inline tiny">평가하기</a></td>
+									<td><a href="#none" class="btn_inline tiny hred"><i class="xi-thumbs-up"></i>평가하기</a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -159,7 +163,7 @@
 				<div class="tabn_detail" id="tabn_detail3">
 
 					<div class="table_top_info">
-						총 5명에 대한 학습현황이 존재합니다.
+						총 <strong>5명</strong>에 대한 학습현황이 존재합니다.
 					</div>
 
 					<div class="tbl_style1 tbl_wrap fz_m scroll-x">
@@ -231,7 +235,7 @@
 					</div>
 
 					<div class="graph">
-						<img src="images/msample_01.jpg" alt="" style="max-width:100%;">
+						<img src="images/msample_01.jpg" alt="" style="width:100%;">
 					</div>
 
 				</div><!-- .tabn_detail -->
@@ -240,8 +244,8 @@
 				<div class="tabn_detail" id="tabn_detail5">
 
 					<div class="table_top_info">
-						총 1명의 운영자가 존재합니다.
-						<div class="btn_download"><a class="btn_inline tiny" href="#none">운영자 추가하기</a></div>
+						총 <strong>5명</strong>의 운영자가 존재합니다.
+						<div class="btn_download"><a class="btn_inline tiny hred" href="#none"><i class="xi-user-plus-o"></i>운영자 추가하기</a></div>
 					</div>
 					<div class="tbl_style1 tbl_wrap fz_m">
 						<table>
@@ -286,10 +290,10 @@
 				<div class="tabn_detail" id="tabn_detail6">
 
 					<div class="btn_list_wrap alr">
-						<a class="btn_inline white tiny" href="#none">카카오톡 보내기</a>
-						<a class="btn_inline white tiny" href="#none">SMS 보내기</a>
-						<a class="btn_inline white tiny" href="#none">메일 보내기</a>
-						<a class="btn_inline  tiny" href="#none">발송 이력 보기</a>
+						<a class="btn_inline white tiny" href="#none"><i class="xi-kakaotalk"></i>카카오톡 보내기</a>
+						<a class="btn_inline white tiny" href="#none"><i class="xi-message-o"></i>SMS 보내기</a>
+						<a class="btn_inline white tiny" href="#none"><i class="xi-mail-o"></i>메일 보내기</a>
+						<a class="btn_inline  tiny hred" href="#none"><i class="xi-comment-o"></i>발송 이력 보기</a>
 					</div>
 					<div class="tbl_style1 tbl_wrap fz_m">
 						<table>
@@ -369,7 +373,7 @@
 									<td>0/20</td>
 									<td>0/20</td>
 									<td>0/20</td>
-									<td><a class="btn_inline tiny" href="#none">보기</a></td>
+									<td><a class="btn_inline white tiny" href="#none"><i class="xi-search"></i>보기</a></td>
 								</tr>
 								<tr>
 									<td>2019-12-31 16:00</td>
@@ -378,7 +382,7 @@
 									<td>0/20</td>
 									<td>0/20</td>
 									<td>0/20</td>
-									<td><a class="btn_inline tiny" href="#none">보기</a></td>
+									<td><a class="btn_inline white tiny" href="#none"><i class="xi-search"></i>보기</a></td>
 								</tr>
 
 							</tbody>
@@ -406,7 +410,7 @@
 
 
 
-		</div><!-- .conts_body -->
+		</div><!-- .sub_full_body -->
 
 
 

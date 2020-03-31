@@ -1,41 +1,67 @@
 <?php include_once('./inc_header.html'); ?>
 
 
+<style type="text/css">
+.side,
+.survey_wrap {display: none;}
+.contents_wrap .conts {width: 100%; padding-left: 0;}
+</style>
+
+
+
+		<div class="sub_full_body">
 
 
 
 
 
-		<div class="conts_body">
-			<h1 class="page_title">K-COMICS 아카데미</h1>
 
+<div class="menu_body_wrap">
+	<div class="menu4">
+		<ul>
+			<li>
+				<a href="#none" class="active"><i class="xi xi-file-add-o"></i>상세정보</a>
+			</li>
+			<li>
+				<a href="#none"><i class="xi xi-align-justify"></i>공지사항</a>
+			</li>
+			<li>
+				<a href="#none"><i class="xi xi-comment-o"></i>Q&amp;A</a>
+			</li>
+			<li>
+				<a href="#none"><i class="xi xi-paper-o"></i>자료실</a>
+			</li>
+		</ul>
+	</div>
 
-			<div class="control_link">
-				<a class="btn_inline tiny white" href="#none">인쇄하기</a>
-			</div>
-
+	<div class="menu_body">
 
 
 			<div class="offline_prd">
 
 				<div class="subj_wrap">
+
+					<div class="pd_tag">#스케치업</div>
+					<div class="pd_title">스케치업 기본 마스터하기</div>
+
 					<div class="bdbox">
 						<div class="photo">
 							<p><img src="images/msample_03.jpg" alt=""></p>
 							<ul>
-								<li><span>강사</span> 홍길동</li>
+								<li><span>강사</span> <div>홍길동</div></li>
 								<li><span>수강료</span>
+									<div>
 									정상가:450,000원<br>
 									학생할인: 360,000원<br>
 									2인이상단체할인:360,000원
+									</div>
 								</li>
 							</ul>
 
 						</div>
 
 						<div class="desc">
-							<div class="pd_tag">#스케치업</div>
-							<div class="pd_title">스케티업 기본 마스터하기</div>
+
 							<ul class="dlist">
 								<li><span>교육기간</span> 2020-04-01 ~ 2020-04-30 매주 화,목 16:00~18:00</li>
 								<li><span>모집기간</span> 2020-04-01 ~ 2020-04-30</li>
@@ -49,12 +75,12 @@
 									<li>
 										<i class="xi-calendar-check"></i>
 										<span>신청기간</span>
-										<div>2020-01-01 ~ 2020-03-21</div>
+										<div>2020-01-01 ~ <br class="pc_none">2020-03-21</div>
 									</li>
 									<li>
 										<i class="xi-users-o"></i>
 										<span>신청유형</span>
-										<div>2020-01-01 ~ 2020-03-21</div>
+										<div>개인(총25명)</div>
 									</li>
 									<li>
 										<i class="xi-alarm-clock-o"></i>
@@ -67,9 +93,9 @@
 					</div>
 
 					<div class="control_link">
-						<a class="btn_inline min" href="#none" id="bpop_open2">신청하기</a>
+						<a class="btn_inline redW large" href="#none" id="bpop_open2">신청하기<i class="xi-check"></i></a>
 
-						<a class="btn_inline min" href="#none" id="bpop_open3">팀 신청하기</a>
+						<a class="btn_inline redW large" href="#none" id="bpop_open3">팀 신청하기<i class="xi-check-square-o"></i></a>
 					</div>
 
 				</div><!-- .subj_wrap -->
@@ -150,16 +176,16 @@
 							<div class="photo"><img src="images/prof.jpg" alt=""></div>
 
 							<div class="desc">
+								<div class="desc_name"><strong>홍길동</strong> 강사</div>
 								<ul class="dlist">
-									<li><span>이름</span> 김강사</li>
 									<li><span>교육분야</span> 디지털 신기술</li>
 									<li><span>세부 교육분야</span> 스케치업</li>
 									<li><span>이메일</span> aaa@aaa.aaa</li>
 									<li><span>홈페이지</span> wwww.google.com</li>
 
-									<li>웹툰 <그대에게>, <바우트윈>, <알라모> 연재</li>
-									<li>EBS 연재웹툰 <물상객주 시즌2> 연재</li>
-									<li>포토샵을 이용해 메카닉, 항공기 등 전문분야의 일러스트레이터로 활동중 </li>
+									<li>-웹툰 <그대에게>, <바우트윈>, <알라모> 연재</li>
+									<li>-EBS 연재웹툰 <물상객주 시즌2> 연재</li>
+									<li>-포토샵을 이용해 메카닉, 항공기 등 전문분야의 일러스트레이터로 활동중 </li>
 								</ul>
 							</div>
 						</div>
@@ -192,7 +218,9 @@
 								<li><span>주당학습 권장시간</span> 2시간/10회</li>
 								<li><span>수료증</span> 미발급</li>
 							</ul>
-							<br>
+						</div>
+
+						<div class="form_detail bdt4">
 							<div class="ft">결제유형</div>
 							<div class="pay_chk_group">
 								<label>
@@ -206,7 +234,9 @@
 									* 국민은행 : 000-00-0000, 예금주: 한국만화영상진흥원
 								</label>
 							</div>
-							<br>
+						</div>
+
+						<div class="form_detail bdt4">
 							<div class="ft">결제 금액</div>
 							<div class="pay_chk_group">
 								<label>
@@ -226,27 +256,60 @@
 							(문의처 : 032-310-3139)
 						</div>
 						<div class="btn_wrap">
-							<a class="btn_inline " href="#none" id="sign_submit">신청하기</a>
+							<a class="btn_inline hred" href="#none" id="sign_submit"><i class="xi-user-o"></i>신청하기</a>
 							&nbsp;
-							<a class="btn_inline white bpop_close" href="#none" >취소</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-list"></i>취소</a>
 						</div>
 					</div>
 
 
 					<div class="bpop_wrap step paystep2">
+
 						<div class="pp_header">
-							수강신청 완료
+							수강 신청
 							<p class="close bpop_close"><i class="xi xi-close"></i></p>
 						</div>
 
-						<div class="button_info">김학생 님 수강신청이 완료 되었습니다.</div>
-
-
 						<div class="form_detail">
+							<div class="ft">교육정보</div>
 
+							<ul>
+								<li><span>교육명</span> 만화의 생동감을 살리는 색채표현! 디지털 컬러링</li>
+								<li><span>강사</span> 홍길동</li>
+								<li><span>교육기간</span> 2020-04-01 ~ 2020-04-30</li>
+								<li><span>수강료</span> 무료</li>
+								<li><span>주당학습 권장시간</span> 2시간/10회</li>
+								<li><span>수료증</span> 미발급</li>
+							</ul>
+						</div>
+
+						<div class="form_detail bdt4">
+							<div class="ft">결제유형</div>
+							<div>현장결제</div>
+						</div>
+						<div class="form_detail bdt4">
+							<div class="ft">결제유형</div>
+							<div>학생할인: 240,000원</div>
+						</div>
+
+						<div class="btn_wrap">
+							<a class="btn_inline hred" href="#none" id="sign_submit2"><i class="xi-user-o"></i>신청 확인</a>
+							&nbsp;
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-list"></i>취소</a>
+						</div>
+					</div>
+
+					<div class="bpop_wrap step paystep3">
+						<div class="pp_header">
+							<i class="sty xi-check-circle-o"></i><br>
+							수강신청 완료
+							<p class="close bpop_close"><i class="xi xi-close"></i></p>
+						</div>
+						<div class="button_info">김학생 님 수강신청이 완료 되었습니다.</div>
+						<div class="form_detail">
 							<div class="ft">수강신청 상세정보</div>
 							<ul>
-								<li><span>접수번호</span> 2020enr12345</li>
+								<li><span>접수번호</span> <strong>2020enr12345</strong></li>
 								<li><span>신청일시</span>  2020-04-01 15:01:12</li>
 								<li><span>신청인</span> 김학생</li>
 							</ul>
@@ -259,9 +322,8 @@
 								<li><span>주당학습 권장시간</span> 2시간/10회</li>
 								<li><span>수료증</span> 미발급</li>
 							</ul>
-
-							<br>
-
+						</div>
+						<div class="form_detail bdt4">
 							<div class="ft">결제방법 안내</div>
 
 							<div class="payment">
@@ -276,16 +338,14 @@
 								</div>
 							</div>
 						</div>
-
-
 						<div class="button_info">수강신청에 대한 확인이나 수정 및 취소는 마이페이지에서 가능합니다.<br>
 						‘확인 완료＇ 버튼을 클릭하면 마이페이지로 이동합니다.
 						</div>
 
 						<div class="btn_wrap">
-							<a class="btn_inline white" href="#none">인쇄하기</a>
+							<a class="btn_inline hred" href="#none"><i class="xi-print"></i>인쇄하기</a>
 							&nbsp;
-							<a class="btn_inline white bpop_close" href="#none" >확인완료</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-align-justify"></i>확인완료</a>
 						</div>
 					</div>
 					<div class="bgshadow"></div>
@@ -312,7 +372,9 @@
 								<li><span>주당학습 권장시간</span> 2시간/10회</li>
 								<li><span>수료증</span> 미발급</li>
 							</ul>
-							<br>
+						</div>
+
+						<div class="form_detail bdt4">
 							<div class="ft">팀 정보</div>
 
 							<div class="frm_area">
@@ -332,8 +394,6 @@
 										</div>
 									</div>
 								</div>
-
-
 								<div class="frm_neo">
 									<div class="item2">팀원</div>
 									<div class="input_area2"  id="student_val">
@@ -347,18 +407,12 @@
 										</div>
 									</div>
 								</div>
-
-
 								<div class="frm_neo">
 									<div class="item2"> </div>
 									<div class="input_area2" >
 										<a href="javascript:addstudent();" class="btn_inline tiny white">학생추가</a>
 									</div>
 								</div>
-
-
-
-
 
 								<div class="frm_neo">
 									<div class="item2">파일업로드</div>
@@ -376,15 +430,73 @@
 						</div>
 
 						<div class="btn_wrap">
-							<a class="btn_inline " href="#none" id="sign_submit3">신청하기</a>
+							<a class="btn_inline hred" href="#none" id="sign_submit3"><i class="xi-users-o"></i>신청하기</a>
 							&nbsp;
-							<a class="btn_inline white bpop_close" href="#none" >취소</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-list"></i>취소</a>
 						</div>
 					</div>
 
 
+
 					<div class="bpop_wrap step paystep2" style="display: none;">
 						<div class="pp_header">
+							<i class="sty xi-check-circle-o"></i><br>
+							수강신청
+							<p class="close bpop_close"><i class="xi xi-close"></i></p>
+						</div>
+
+						<div class="form_detail">
+							<div class="ft">교육정보</div>
+							<ul>
+								<li><span>교육명</span> 만화의 생동감을 살리는 색채표현! 디지털 컬러링</li>
+								<li><span>강사</span> 홍길동</li>
+								<li><span>교육기간</span> 2020-04-01 ~ 2020-04-30</li>
+								<li><span>수강료</span> 무료</li>
+								<li><span>주당학습 권장시간</span> 2시간/10회</li>
+								<li><span>수료증</span> 미발급</li>
+							</ul>
+						</div>
+
+						<div class="form_detail bdt4">
+							<div class="ft">팀 정보</div>
+
+							<div class="frm_area">
+								<div class="frm_neo">
+									<div class="item2">팀명</div>
+									<div>홍길동팀</div>
+								</div>
+
+								<div class="frm_neo">
+									<div class="item2">지도교사</div>
+									<div>홍길동</div>
+								</div>
+								<div class="frm_neo">
+									<div class="item2">팀원</div>
+									<div>
+										홍길동,홍길동,홍길동,홍길동,홍길동,홍길동
+
+									</div>
+
+								</div>
+
+							</div><!-- .frm_area -->
+						</div>
+
+
+
+
+						<div class="btn_wrap">
+							<a class="btn_inline hred" href="#none" id="sign_submit4"><i class="xi-users-o"></i>신청 확인</a>
+							&nbsp;
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-list"></i>취소</a>
+						</div>
+					</div>
+
+
+
+					<div class="bpop_wrap step paystep3" style="display: none;">
+						<div class="pp_header">
+							<i class="sty xi-check-circle-o"></i><br>
 							수강신청 완료
 							<p class="close bpop_close"><i class="xi xi-close"></i></p>
 						</div>
@@ -396,7 +508,7 @@
 
 							<div class="ft">수강신청 상세정보</div>
 							<ul>
-								<li><span>접수번호</span> 2020enr12345</li>
+								<li><span>접수번호</span> <strong>2020enr12345</strong></li>
 								<li><span>신청일시</span>  2020-04-01 15:01:12</li>
 								<li><span>신청인</span> 김학생</li>
 							</ul>
@@ -409,12 +521,9 @@
 								<li><span>주당학습 권장시간</span> 2시간/10회</li>
 								<li><span>수료증</span> 미발급</li>
 							</ul>
-
-							<br>
-
+						</div>
+						<div class="form_detail bdt4">
 							<div class="ft">팀 정보</div>
-
-
 							<div class="tbl_style1 tbl_wrap fz_m">
 								<table>
 									<thead>
@@ -439,8 +548,8 @@
 									</tbody>
 								</table>
 							</div><!-- .tbl_style1 -->
-
 						</div>
+
 
 
 						<div class="button_info">수강신청에 대한 확인이나 수정 및 취소는 마이페이지에서 가능합니다.<br>
@@ -448,9 +557,9 @@
 						</div>
 
 						<div class="btn_wrap">
-							<a class="btn_inline white" href="#none">인쇄하기</a>
+							<a class="btn_inline hred" href="#none"><i class="xi-print"></i>인쇄하기</a>
 							&nbsp;
-							<a class="btn_inline white bpop_close" href="#none" >확인완료</a>
+							<a class="btn_inline white bpop_close" href="#none" ><i class="xi-align-justify"></i>확인완료</a>
 						</div>
 					</div>
 					<div class="bgshadow"></div>
@@ -482,12 +591,24 @@
 						$('.bpop_wrap.paystep2').show();
 					});
 
+					$('#sign_submit2').click(function(){
+						$('.bpop_wrap.step').hide();
+						$('.bpop_wrap.paystep3').show();
+					});
+
+
+
 					$('#sign_submit3').click(function(){
 						$('.bpop_wrap.step').hide();
 						$('.bpop_wrap.paystep2').show();
 					});
+					$('#sign_submit4').click(function(){
+						$('.bpop_wrap.step').hide();
+						$('.bpop_wrap.paystep3').show();
+					});
 				});
 				</script>
+
 
 
 <script type="text/javascript">
@@ -521,9 +642,30 @@ function con_delete(obj) {
 }
 </script>
 
+
+
 			</div><!-- .offline_prd -->
 
-		</div><!-- .conts_body -->
+
+	</div><!-- .menu_body -->
+</div><!-- .menu_body_wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div><!-- .sub_full_body -->
 
 
 
